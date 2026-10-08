@@ -7,6 +7,7 @@ fun AdoptionRequestEntity.toDomain(): AdoptionRequest {
     return AdoptionRequest(
         id = id,
         userId = userId,
+        firebaseUserId = firebaseUserId,
         petId = petId,
         fullName = fullName,
         age = age,
@@ -28,6 +29,7 @@ fun AdoptionRequest.toEntity(): AdoptionRequestEntity {
     return AdoptionRequestEntity(
         id = id,
         userId = userId,
+        firebaseUserId = firebaseUserId,
         petId = petId,
         fullName = fullName,
         age = age,

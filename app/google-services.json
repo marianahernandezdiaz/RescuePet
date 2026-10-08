@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "837363735056",
+    "project_id": "rescuepet-1af6e",
+    "storage_bucket": "rescuepet-1af6e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837363735056:android:974fd128e9069d10200895",
+        "android_client_info": {
+          "package_name": "com.is.rescuepet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjivPphBgzjuLIZ30jxvYopU39waC5-HM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

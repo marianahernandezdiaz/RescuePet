@@ -1,7 +1,5 @@
 package com.`is`.rescuepet.ui.viewmodel
 
-
-
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.`is`.rescuepet.data.repository.UserRepository
@@ -62,34 +60,24 @@ class LoginViewModel(
             }
 
             try {
+
                 val user = userRepository.login(
                     email = currentState.email,
                     password = currentState.password
                 )
 
-                if (user != null) {
-
-                    _uiState.value = currentState.copy(
-                        isLoading = false,
-                        success = true,
-                        role = user.role,
-                        userId = user.id
-
-                    )
-
-                } else {
-
-                    _uiState.value = currentState.copy(
-                        isLoading = false,
-                        error = "Correo o contraseña incorrectos"
-                    )
-                }
+                _uiState.value = currentState.copy(
+                    isLoading = false,
+                    success = true,
+                    role = user.role,
+                    userId = user.id
+                )
 
             } catch (e: Exception) {
 
                 _uiState.value = currentState.copy(
                     isLoading = false,
-                    error = "Ocurrió un error al iniciar sesión"
+                    error = "Correo o contraseña incorrectos"
                 )
             }
         }

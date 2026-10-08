@@ -3,6 +3,7 @@ package com.`is`.rescuepet.domain.model
 data class AdoptionRequest(
     val id: Int,
     val userId: Int,
+    val firebaseUserId: String = "",
     val petId: Int,
     val fullName: String,
     val age: Int,

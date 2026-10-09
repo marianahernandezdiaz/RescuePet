@@ -20,7 +20,7 @@ import com.`is`.rescuepet.data.local.entity.AdoptionRequestEntity
         PetReportEntity::class,
         AdoptionRequestEntity::class
     ],
-    version = 1,
+    version = 3,
     exportSchema = false
 )
 abstract class RescuePetDatabase : RoomDatabase() {

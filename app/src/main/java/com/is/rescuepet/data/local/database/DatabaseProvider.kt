@@ -19,7 +19,9 @@ object DatabaseProvider {
                 context.applicationContext,
                 RescuePetDatabase::class.java,
                 "rescuepet_database"
-            ).build()
+            )
+                .fallbackToDestructiveMigration()
+                .build()
 
             INSTANCE = instance
 
